@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#input-button {
+  background-color: #5f9341;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+  transition-duration: 300ms;
+  margin-top: 10px;
+}
+
+#input-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  font-size: 13.2px;
+}
+
+#input-element {
+  border: 2px solid #6aa348;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: none;
+  transition-duration: 500ms;
+}
+
+#input-element:focus {
+  border: 2px solid #4a7436;
+}
