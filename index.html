@@ -7,9 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <input type="text" id="input-element" />
+    <input
+      type="text"
+      id="input-element"
+      onfocus="this.value = '' "
+      value="Enter URL that you want to save"
+    />
     <button id="input-button">SAVE WEBSITE</button>
     <ul id="website-list"></ul>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>

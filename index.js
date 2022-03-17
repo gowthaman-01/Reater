@@ -1,11 +1,4 @@
-const inputButton = document.getElementById("input-button")
-let myWebsites = [];
-const inputWebsite = document.getElementById("input-element");
-const save = () => {
-    myWebsites.push(inputWebsite.value);
-    console.log(myWebsites);
-}
+import { output, save } from "./functions.js";
+import { inputButton } from "./constants.js"
 
-inputButton.addEventListener("click", save)
-
-
+inputButton.addEventListener("click", save);
