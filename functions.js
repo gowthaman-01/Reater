@@ -16,7 +16,7 @@ export const save = () => {
     }
     localStorage.setItem("websites", JSON.stringify(myWebsites));
 
-}
+} 
 
 export const output = () => {
     let htmlData = "";
@@ -40,7 +40,6 @@ export const output = () => {
 
 export const clear = () => {
     localStorage.clear();
-    outputWebsites.innerHTML = "";
     myWebsites = [];
     output();
 }
