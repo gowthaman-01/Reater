@@ -11,7 +11,7 @@ body {
   color: white;
   border: none;
   padding: 15px;
-  width: 300px;
+  width: 260px;
   font-size: 24px;
   cursor: pointer;
   font-weight: bold;
@@ -26,12 +26,32 @@ body {
   font-size: 24.2px;
 }
 
+#tab-button {
+  background-color: #88b04b;
+  color: white;
+  border: none;
+  padding: 15px;
+  width: 260px;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: bold;
+  transition-duration: 300ms;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#tab-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  font-size: 24.2px;
+}
+
 #clear-button {
   background-color: #ff6f61;
   color: white;
   border: none;
   padding: 15px;
-  width: 300px;
+  width: 250px;
   font-size: 24px;
   cursor: pointer;
   font-weight: bold;

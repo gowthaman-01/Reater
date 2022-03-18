@@ -39,8 +39,21 @@ export const output = () => {
 }
 
 export const clear = () => {
-    outputWebsites.innerHTML = "";
     localStorage.clear();
+    outputWebsites.innerHTML = "";
+    myWebsites = [];
+    output();
+}
+
+export const tab = () => {
+    if (myWebsitesStorage) {
+        myWebsites = myWebsitesStorage;
+    }
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        myWebsites.push(tabs[0].url);
+        output();
+        localStorage.setItem("websites", JSON.stringify(myWebsites));
+    })
 }
 
 output();   
