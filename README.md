@@ -1,6 +1,6 @@
 # Reater
 
-![screenshot](screenshots/screenshot.jpg)
+![screenshot](screenshots/screenshot.png)
 
 A chrome extension that helps you keep track of websites that you have read halfway in order to prevent tab clutter. This extension is helpful for students who are doing research and want a tool to save websites that they want to earn at another time.
 
