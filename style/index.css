@@ -90,7 +90,12 @@ input {
   color: #555555;
 }
 
+
 input:focus {
+  background-color: #eeeeee;
+}
+
+input:hover {
   background-color: #eeeeee;
 }
 

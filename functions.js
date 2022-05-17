@@ -10,7 +10,7 @@ export const save = () => {
         myWebsites = myWebsitesStorage;
     }
     myWebsites.push(inputWebsite.value);
-    output();
+    output(false);
     if (validInput){
         inputWebsite.value = "";
     }
@@ -18,10 +18,14 @@ export const save = () => {
 
 } 
 
-export const output = () => {
+export const output = (isClear) => {
     let htmlData = "";
     if (myWebsitesStorage) {
         myWebsites = myWebsitesStorage;
+    }
+    if (isClear) {
+        outputWebsites.innerHTML = "";
+        return
     }
     for (let i = 0; i < myWebsites.length; ++i) {
         if (myWebsites[i] !== "" && myWebsites[i] !== "Enter URL that you want to save"){
@@ -41,7 +45,7 @@ export const output = () => {
 export const clear = () => {
     localStorage.clear();
     myWebsites = [];
-    output();
+    output(true);
 }
 
 export const tab = () => {
