@@ -1,16 +1,14 @@
 {
-    "manifest_version": 3,
-    "version": "0.0.0.1",
-    "name": "Reater",
-    "description": "Chrome extension for read later websites.",
-    "action": {
-        "default_popup": "index.html",
-        "default_icon": "/assets/web.png"
-    },
-    "permissions": [
-        "tabs"
-    ],
-    "icons": {
+  "manifest_version": 3,
+  "version": "0.0.0.1",
+  "name": "Reater",
+  "description": "Chrome extension for read later websites.",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "/assets/web.png"
+  },
+  "permissions": ["tabs"],
+  "icons": {
     "128": "icon128.png"
-    }
+  }
 }
